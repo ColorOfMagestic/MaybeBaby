@@ -1,0 +1,20 @@
+.more-btn {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: size(5);
+  font-size: size(14);
+  color: inherit;
+  .icon_20 {
+    margin-top: size(5);
+    transform: rotate(90deg);
+    @include media(lg) {
+      margin-top: size(7);
+    }
+  }
+  @include media(lg) {
+    margin-top: size(10);
+    font-size: size(16);
+  }
+}

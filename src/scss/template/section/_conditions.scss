@@ -1,0 +1,55 @@
+.conditions {
+  position: relative;
+  padding-top: size(34);
+  @include media(lg) {
+    padding: size(97) 0 size(14);
+  }
+  &--advantage {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: size(18);
+    align-items: center;
+    @include media(lg) {
+      grid-template-columns: auto;
+      justify-items: center;
+      grid-row-gap: size(27);
+      position: relative;
+      font-size: size(18);
+      text-align: center;
+    }
+    &-decor {
+      display: none;
+      @include media(lg) {
+        display: block;
+        width: size(108);
+        height: size(33);
+        position: absolute;
+        right: size(-69);
+        top: size(43);
+      }
+    }
+    &-wrapper {
+      display: grid;
+      grid-row-gap: size(14);
+      @include media(lg) {
+        justify-items: center;
+        align-items: start;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: size(30);
+      }
+      &:not(:last-child) {
+        margin-bottom: size(30);
+        @include media(lg) {
+          margin-bottom: size(40);
+        }
+      }
+    }
+  }
+  .btn {
+    width: 100%;
+    margin: 0 auto;
+    @include media(md) {
+      width: auto;
+    }
+  }
+}

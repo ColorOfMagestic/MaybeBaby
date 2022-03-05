@@ -1,0 +1,33 @@
+.reviews {
+  position: relative;
+  padding-top: size(34);
+  @include media(lg) {
+    padding: size(97) 0 size(109);
+  }
+  &--grid {
+    display: grid;
+    grid-template-areas: "title" "slider" "buttons";
+    grid-row-gap: size(15);
+    @include media(lg) {
+      grid-template-columns: 1fr auto;
+      grid-template-areas: "title buttons" "slider slider";
+      grid-row-gap: size(62);
+    }
+  }
+  &--slider {
+    grid-area: slider;
+    &-buttons {
+      grid-area: buttons;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .title--size-md {
+    grid-area: title;
+    margin: size(13);
+    @include media(lg) {
+      margin: 0;
+    }
+  }
+}

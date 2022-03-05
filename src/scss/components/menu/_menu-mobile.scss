@@ -1,0 +1,90 @@
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-size: size(14);
+    @include media(md) {
+        flex-direction: row;
+    }
+    a {
+        color: inherit;
+    }
+    &--lnk {
+        &:not(:last-child) {
+            margin-bottom: size(10);
+            @include media(md) {
+                margin-bottom: 0;
+                margin-right: size(20);
+            }
+        }
+    }
+    &--group {
+        display: grid;
+        grid-row-gap: size(10);
+        margin-bottom: size(10);
+        @include media(md) {
+            width: size(230);
+            margin-bottom: 0;
+            margin-right: auto;
+        }
+        &-title {
+            display: flex;
+            align-items: center;
+            &-icon {
+                width: size(15);
+                height: size(15);
+                margin-left: size(5);
+                object-position: center;
+                object-fit: contain;
+                fill: #332532;
+                transition: .4s;
+            }
+            &.open > .mobile-menu--group-title-icon {
+                transform: rotate(-180deg);
+            }
+        }
+        &-body {
+            display: none;
+        }
+        .mobile-menu--group {
+            width: auto;
+            margin: 0;
+            &-title.open {
+                font-weight: 500;
+            }
+            .mobile-menu--group {
+                font-size: size(12);
+                .mobile-menu--group-body {
+                    margin-left: size(16);
+                }
+            }
+        }
+    }
+    &--list {
+        display: grid;
+        grid-row-gap: size(10);
+        margin-bottom: size(10);
+        .mobile-menu--list {
+            margin-bottom: 0;
+        }
+    }
+    &--icon {
+        width: size(20);
+        height: size(20);
+        fill: #332532;
+    }
+    &--contacts {
+        margin-top: auto;
+        @include media(md) {
+            display: none;
+        }
+    }
+    &-wrapper {
+        display: none;
+        overflow-y: auto;
+        padding: size(7) 0 size(26);
+        .container {
+            height: 100%;
+        }
+    }
+}

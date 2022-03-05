@@ -1,0 +1,26 @@
+<header class="header" data-role="fixed-header">
+  <div class="container">
+    @@include("../components/menu/sandwich.html",{})
+    <img class="header--logo" src="images/global/logo.svg" alt=""/>
+    @@include("../components/menu/menu.html",{})
+    <div class="header--contacts">
+      <a class="header--contacts-social" href="#">
+        <svg>
+          <use xlink:href="svg-sprite/sprite.svg#instagram-17"></use>
+        </svg>
+      </a>
+      <a class="header--contacts-social" href="#">
+        <svg>
+          <use xlink:href="svg-sprite/sprite.svg#whatsapp-17"></use>
+        </svg>
+      </a>
+      <a class="header--contacts-lnk" href="tel:+78000000000">+7 800 000-00-00</a>
+      <div class="header--contacts-separator"></div>
+    </div>
+    <a class="header--cart" href="#">Корзина
+      <img src="images/header/cart.svg" alt="">
+      <span class="header--cart-count">0</span>
+    </a>
+  </div>
+  @@include("../components/menu/menu-mobile.html",{})
+</header>

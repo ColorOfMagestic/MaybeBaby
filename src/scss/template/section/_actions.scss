@@ -1,0 +1,116 @@
+.actions {
+  position: relative;
+  padding-top: size(34);
+  @include media(lg) {
+    padding-top: size(97);
+  }
+  &--tile {
+    border-radius: size(5);
+    &-price {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: size(62);
+      height: size(62);
+      position: absolute;
+      right: size(7);
+      top: size(7);
+      font-size: size(14);
+      font-weight: 500;
+      text-align: center;
+      border-radius: 50%;
+      background: $btn-bg;
+      z-index: 2;
+      @include media(lg) {
+        width: size(78);
+        height: size(78);
+        right: size(20);
+        top: size(20);
+        font-size: size(20);
+      }
+      &_old {
+        position: relative;
+        font-size: size(12);
+        font-weight: 400;
+        color: #d6b89c;
+        @include media(lg) {
+          font-size: size(14);
+        }
+        &:after {
+          content: '';
+          width: 110%;
+          height: 1px;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          background: #d6b89c;
+          transform: translate(-50%, -50%) rotate(-10deg);
+        }
+      }
+    }
+    &_1 {
+      @extend .actions--tile;
+      grid-area: photo-1;
+      --adaptive-box: #{height(369,543)};
+    }
+    &_2 {
+      @extend .actions--tile;
+      grid-area: photo-2;
+      --adaptive-box: #{height(369,376)};
+      .actions--tile-price {
+        top: auto;
+        bottom: size(20);
+      }
+    }
+    &_3 {
+      @extend .actions--tile;
+      grid-area: photo-3;
+      --adaptive-box: #{height(369,512)};
+    }
+    &_4 {
+      @extend .actions--tile;
+      grid-area: photo-4;
+      --adaptive-box: #{height(369,355)};
+      @include media(lg) {
+        --adaptive-box: #{height(369,384)};
+      }
+    }
+    &_5 {
+      @extend .actions--tile;
+      grid-area: photo-5;
+      --adaptive-box: #{height(369,387)};
+      @include media(lg) {
+        --adaptive-box: #{height(369,551)};
+        .actions--tile-price {
+          top: auto;
+          bottom: size(20);
+        }
+      }
+    }
+    &_6 {
+      @extend .actions--tile;
+      grid-area: photo-6;
+      --adaptive-box: #{height(369,387)};
+      @include media(lg) {
+        --adaptive-box: #{height(369,416)};
+      }
+    }
+    &-wrapper {
+      display: grid;
+      grid-gap: size(10);
+      grid-template-areas: "photo-1 photo-2" "photo-1 photo-3" "photo-4 photo-3" "photo-5 photo-6";
+      @include media(lg) {
+        grid-gap: size(32);
+        grid-template-areas: "photo-1 photo-2 photo-3" "photo-1 photo-5 photo-3" "photo-1 photo-5 photo-6" "photo-4 photo-5 photo-6";
+      }
+    }
+  }
+  //.title--size-md {
+  //  text-align: center;
+  //  &:after {
+  //    left: 50%;
+  //    transform: translateX(-50%) rotate(8.09deg);
+  //  }
+  //}
+}

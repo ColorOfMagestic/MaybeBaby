@@ -1,0 +1,19 @@
+.text {
+  &:not(:last-child) {
+    margin-bottom: 1.23em;
+  }
+  &_big {
+    font-size: size(16);
+    font-weight: 500;
+    @include media(lg) {
+      font-size: size(18);
+    }
+  }
+  &_ps {
+    font-size: size(14);
+    font-style: italic;
+    @include media(lg) {
+      font-size: size(24);
+    }
+  }
+}

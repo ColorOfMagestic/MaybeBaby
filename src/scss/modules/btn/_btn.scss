@@ -1,0 +1,15 @@
+$btn-bg: #ffebd8;
+$btn-bg-hover: #ffe4cb;
+$btn-bg-active: #f3d7bd;
+$btn-color: #332532;
+$btn-color-hover: #332532;
+$btn-color-active: #332532;
+$btn-color-outline: currentColor;
+
+.btn {
+    position: relative;
+    text-decoration: none;
+    transition-duration: $td;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}

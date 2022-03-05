@@ -1,0 +1,56 @@
+.selection {
+  padding-top: size(34);
+  @include media(lg) {
+    padding-top: size(97);
+  }
+  &--form {
+    max-width: size(440);
+    margin: 0 auto;
+    @include media(lg) {
+      max-width: none;
+    }
+    input {
+      width: 100%;
+      padding:  size(15) size(10);
+      font-family: inherit;
+      font-size: size(14);
+      color: inherit;
+      border-bottom: #332532 1px solid;
+      @include media(lg) {
+        padding: size(25) size(20);
+        font-size: size(16);
+      }
+    }
+    .btn {
+      margin: size(33) auto 0;
+      @include media(lg) {
+        margin-top: 0;
+      }
+    }
+  }
+  ::-webkit-input-placeholder {
+    text-align: center;
+    color: #999095;
+  }
+  ::-moz-placeholder {
+
+    color: #999095;
+  }
+  :-moz-placeholder {
+    text-align: center;
+    color: #999095;
+    text-align: center;
+  }
+  :-ms-input-placeholder {
+    text-align: center;
+    color: #999095;
+  }
+  .title--size-md {
+    max-width: size(456);
+    margin-left: auto;
+    margin-right: auto;
+    @include media(lg) {
+      max-width: size(770);
+    }
+  }
+}

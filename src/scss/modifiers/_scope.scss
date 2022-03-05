@@ -1,0 +1,11 @@
+.phone-only {
+  @include media(md) {
+    display: none;
+  }
+}
+.desktop-only {
+  display: none;
+  @include media(lg) {
+    display: block;
+  }
+}

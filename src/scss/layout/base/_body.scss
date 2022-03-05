@@ -1,0 +1,29 @@
+html {
+    height: 100%;
+    position: relative;
+}
+body {
+    min-height: 100%;
+    height: auto !important;
+    position: relative;
+    margin: 0;
+    padding-bottom: size(304);
+
+    line-height: map-get($global-settings, 'line-height');
+    font-weight: map-get($global-settings, 'font-weight');
+    font-size: var(--body-font-size);
+    font-family: map-get($global-settings, 'font');
+
+    color: map-get($global-settings, 'color');
+
+    @if (map-get($global-settings, 'bg')) {
+        background-color: map-get($global-settings, 'bg');
+    }
+    @include media(md) {
+        padding-bottom: size(165);
+    }
+    @include media(lg) {
+        padding-bottom: size(248);
+    }
+    -webkit-tap-highlight-color: transparent;
+}

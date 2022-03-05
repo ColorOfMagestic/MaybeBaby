@@ -1,0 +1,10 @@
+.filter {
+  &-wrapper {
+    font-size: size(16);
+    font-weight: 500;
+    @include media(lg) {
+      margin-left: auto;
+      padding-top: size(10);
+    }
+  }
+}

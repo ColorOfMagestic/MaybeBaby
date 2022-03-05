@@ -1,0 +1,35 @@
+<section id="reviews" class="reviews">
+  <div class="container">
+    <div class="reviews--grid">
+      <h2 class="title--size-md">Покупатели о&nbsp;нас</h2>
+      <div class="swiper reviews--slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            @@include("../components/review/review-card.html",{})
+          </div>
+          <div class="swiper-slide">
+            @@include("../components/review/review-card.html",{})
+          </div>
+          <div class="swiper-slide">
+            @@include("../components/review/review-card.html",{})
+          </div>
+        </div>
+      </div>
+      <div class="reviews--slider-buttons">
+        <div class="swiper-button-prev reviews--slider-prev">
+          <svg>
+            <use xlink:href="svg-sprite/sprite.svg#prev-24"></use>
+          </svg>
+        </div>
+        <div class="swiper-button-next reviews--slider-next">
+          <svg>
+            <use xlink:href="svg-sprite/sprite.svg#next-24"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img class="decor_16 desktop-only" src="images/global/star-1.svg" alt="">
+  <img class="decor_17 desktop-only" src="images/global/star-2.svg" alt="">
+  <img class="decor_18 desktop-only" src="images/global/star-3.svg" alt="">
+</section>

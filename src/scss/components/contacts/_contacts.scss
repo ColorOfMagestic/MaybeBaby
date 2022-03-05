@@ -1,0 +1,63 @@
+.contacts {
+  grid-area: middle;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding-bottom: size(20);
+  @include media(md) {
+    padding: 0;
+  }
+  @include media(lg) {
+    flex-direction: row;
+    padding: size(15) 0;
+    border-top: #e1dedd 1px solid;
+  }
+  &--info {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    grid-column-gap: size(10);
+    font-size: size(14);
+    font-weight: 500;
+    &:not(:last-child) {
+      margin-bottom: size(12);
+      @include media(lg) {
+        margin-bottom: 0;
+        margin-right: size(30);
+      }
+    }
+    @include media(lg) {
+      grid-column-gap: size(5);
+    }
+    &-icon {
+      width: size(24);
+      height: size(24);
+      object-position: center;
+      object-fit: contain;
+    }
+  }
+  &--social {
+    width: size(25);
+    height: size(25);
+    padding: size(4);
+    background: #332532;
+    fill: #fff;
+    border-radius: size(9);
+    &:not(:last-child) {
+      margin-right: size(4);
+    }
+    svg {
+      width: 100%;
+      height: 100%;
+      object-position: center;
+      object-fit: contain;
+    }
+    &-wrapper {
+      display: flex;
+      align-items: center;
+      @include media(lg) {
+        margin-left: auto;
+      }
+    }
+  }
+}

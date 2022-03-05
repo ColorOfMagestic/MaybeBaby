@@ -1,0 +1,56 @@
+.about-beds {
+  position: relative;
+  padding-top: size(34);
+  @include media(lg) {
+    padding: size(97) 0 size(14);
+  }
+  &--advantage {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    grid-column-gap: size(17);
+    @include media(lg) {
+      grid-column-gap: size(15);
+      font-size: size(20);
+    }
+    &-description {
+      font-weight: 500;
+    }
+    &-wrapper {
+      display: grid;
+      grid-gap: size(10);
+      @include media(lg) {
+        grid-gap: size(30);
+      }
+      &:not(:last-child) {
+        margin-bottom: size(19);
+        @include media(lg) {
+          margin-bottom: size(30);
+        }
+      }
+    }
+  }
+  &--photo {
+    --adaptive-box: #{height(676,459)};
+    overflow: visible;
+    margin-top: size(26);
+    @include media(lg) {
+      width: size(676);
+      margin: 0;
+    }
+    &-ellipse {
+      width: 84%;
+      height: 80%;
+      position: absolute;
+      left: 8%;
+      top: 10%;
+      border: #332532 1px solid;
+      border-radius: 50%;
+      transform: matrix(1, .38, -.08, .94, 0, 0);
+      z-index: -1;
+    }
+  }
+  .text {
+    font-weight: 500;
+  }
+}

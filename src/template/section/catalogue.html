@@ -1,0 +1,64 @@
+<section id="catalogue" class="catalogue">
+  <div class="container">
+    <div class="catalogue--header">
+      <h2 class="title--size-md">Каталог товаров</h2>
+      <form class="filter-wrapper">
+        <div class="filter--title">Фильтр:</div>
+        <label for="gender"></label>
+        <select id="gender" name="gender" data-role="select" class="filter--select">
+          <option value="male">Для мальчиков</option>
+          <option value="female">Для девочек</option>
+        </select>
+        <label for="age"></label>
+        <select id="age" name="age" data-role="select" class="filter--select">
+          <option value="male">от 0 до 5 лет</option>
+          <option value="male">от 6 до 15 лет</option>
+          <option value="male">от 16 до 25 лет</option>
+          <option value="male">от 26 до 35 лет</option>
+          <option value="male">от 36 до 45 лет</option>
+          <option value="male">от 46 до 55 лет</option>
+          <option value="male">от 56 до 65 лет</option>
+          <option value="male">от 66 до 75 лет</option>
+          <option value="male">от 76 до 85 лет</option>
+        </select>
+      </form>
+    </div>
+    <div class="grid g:columns-4@lg">
+      <div class="col-1@lg">
+        @@include("../components/menu/menu-catalogue.html",{})
+      </div>
+      <div class="col-3@lg">
+        <div class="grid g:columns-3@lg">
+          <div class="col-1">
+            @@include("../components/goods/goods-card.html",{})
+          </div>
+          <div class="col-1">
+            @@include("../components/goods/goods-card.html",{})
+          </div>
+          <div class="col-1">
+            @@include("../components/goods/goods-card.html",{})
+          </div>
+          <div class="col-1">
+            @@include("../components/goods/goods-card.html",{})
+          </div>
+          <div class="col-1">
+            @@include("../components/goods/goods-card.html",{})
+          </div>
+          <div class="col-1">
+            @@include("../components/goods/goods-card.html",{})
+          </div>
+          <div class="tac">
+            @@include("../components/more-btn.html",{})
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img class="decor_7 desktop-only" src="images/global/star-1.svg" alt="">
+  <img class="decor_8 desktop-only" src="images/global/star-2.svg" alt="">
+  <img class="decor_9 desktop-only" src="images/global/star-3.svg" alt="">
+  <img class="decor_10 desktop-only" src="images/global/star-4.svg" alt="">
+  <img class="decor_11 desktop-only" src="images/global/star-5.svg" alt="">
+  <img class="decor_12 desktop-only" src="images/global/star-6.svg" alt="">
+  <img class="spot_3 desktop-only" src="images/global/spot_3.jpg" alt="">
+</section>

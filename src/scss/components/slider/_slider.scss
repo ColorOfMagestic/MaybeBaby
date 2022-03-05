@@ -1,0 +1,52 @@
+.swiper {
+    overflow: hidden;
+    &-slide {
+        height: auto;
+    }
+    &-button {
+        width: size(41);
+        height: size(41);
+        padding: size(11);
+        border: #332532 2px solid;
+        border-radius: size(15);
+        transition: .4s;
+        cursor: pointer;
+        z-index: 9;
+        @media (pointer: fine) {
+            &:hover {
+                border-color: transparent;
+                background: #ffead7;
+            }
+            &:active {
+                background: #f6dbc2;
+            }
+        }
+        @include media(lg) {
+            width: size(60);
+            height: size(60);
+            padding: size(18);
+            border-radius: size(20);
+        }
+        svg {
+            width: 100%;
+            height: 100%;
+            object-position: center;
+            object-fit: contain;
+        }
+        &-prev {
+            @extend .swiper-button;
+        }
+        &-next {
+            @extend .swiper-button;
+            margin-left: size(7);
+            @include media(lg) {
+                margin-left: size(21);
+            }
+        }
+        &-disabled {
+            pointer-events: none;
+            opacity: .15;
+        }
+    }
+
+}

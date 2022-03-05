@@ -1,0 +1,102 @@
+.header {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    transition: .4s;
+    z-index: 2;
+    &.fixed {
+        background: #fff;
+        box-shadow: 0 size(4) size(4) rgba(51, 37, 50, .05);
+    }
+    &.open {
+        @extend .fixed;
+    }
+    @include media(lg) {
+        position: absolute;
+    }
+    &--logo {
+        flex: 0 0 size(99);
+        height: size(41);
+        margin-top: size(-12);
+        margin-right: auto;
+        @include media(lg) {
+            flex: 0 0 size(170);
+            height: size(70);
+            margin-top: size(-7);
+            margin-right: size(30);
+        }
+    }
+    &--contacts {
+        display: none;
+        @include media(lg) {
+            display: flex;
+            align-items: center;
+            line-height: 1;
+            border-right: #edeae9 1px solid;
+        }
+        &-separator {
+            width: 0;
+            height: size(22);
+            border-right: #edeae9 1px solid;
+        }
+        &-lnk {
+            padding: 0 size(15);
+            font-size: size(14);
+            font-weight: 500;
+            color: inherit;
+        }
+        &-social {
+            width: size(25);
+            height: size(25);
+            padding: size(4);
+            margin-left: size(4);
+            background: #332532;
+            fill: #fff;
+            border-radius: size(9);
+            svg {
+                width: 100%;
+                height: 100%;
+                object-position: center;
+                object-fit: contain;
+            }
+        }
+    }
+    &--cart {
+        display: inline-flex;
+        align-items: center;
+        position: relative;
+        margin-left: size(15);
+        font-size: size(14);
+        font-weight: 500;
+        color: inherit;
+        &-count {
+            position: absolute;
+            right: size(-5);
+            top: 0;
+            padding: 0 size(6);
+            font-size: size(8);
+            font-weight: 600;
+            background: #ffebd8;
+            border-radius: size(10);
+        }
+        &-icon {
+            width: size(25);
+            height: size(25);
+            margin-left: size(5);
+            object-position: center;
+            object-fit: contain;
+        }
+    }
+    & > .container {
+        display: flex;
+        align-items: center;
+        padding-top: size(17);
+        padding-bottom: size(17);
+        @include media(lg) {
+            padding-top: size(36);
+        }
+    }
+}

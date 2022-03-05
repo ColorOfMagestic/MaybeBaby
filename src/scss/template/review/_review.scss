@@ -1,0 +1,66 @@
+.review {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  padding: size(13) size(10) size(20);
+  background: #ffebd8;
+  border-radius: size(25);
+  @include media(lg) {
+    padding: size(34) size(30) size(50);
+  }
+  &--icon {
+    width: size(39);
+    height: size(39);
+    margin-bottom: size(6);
+    @include media(lg) {
+      width: size(56);
+      height: size(56);
+      margin-bottom: size(7);
+    }
+  }
+  &--message {
+    margin-bottom: size(30);
+    font-size: size(14);
+    letter-spacing: .01em;
+    @include media(lg) {
+      margin-bottom: size(25);
+      font-size: size(16);
+    }
+  }
+  &--author {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    grid-column-gap: size(8);
+    margin-top: auto;
+    @include media(lg) {
+      grid-column-gap: size(16);
+    }
+    &-photo {
+      --adaptive-box: #{height(98,98)};
+      align-self: start;
+      width: size(66);
+      height: size(66);
+      border-radius: 50%;
+      @include media(lg) {
+        width: size(98);
+        height: size(98);
+      }
+    }
+    &-name {
+      font-size: size(14);
+      font-weight: 600;
+      @include media(lg) {
+        margin-bottom: size(4);
+        font-size: size(20);
+      }
+    }
+    &-position {
+      font-size: size(10);
+      font-weight: 500;
+      @include media(lg) {
+        font-size: size(16);
+      }
+    }
+  }
+}

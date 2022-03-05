@@ -1,0 +1,35 @@
+.top-btn {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  position: absolute;
+  right: size(-58);
+  bottom: size(20);
+  font-size: size(12);
+  letter-spacing: .275em;
+  text-transform: uppercase;
+  color: inherit;
+  transform-origin: size(22) size(20);
+  transform: rotate(-90deg);
+  z-index: 99;
+  @include media(lg) {
+    pointer-events: none;
+    position: fixed;
+    right: size(-40);
+    bottom: size(225);
+    font-size: size(16);
+    transition: .4s;
+    transform-origin: size(33) size(30);
+    opacity: 0;
+  }
+  &.show {
+    pointer-events: auto;
+    opacity: 1;
+  }
+  .icon_55 {
+    margin-right: size(11);
+    @include media(lg) {
+      margin-right: size(16);
+    }
+  }
+}

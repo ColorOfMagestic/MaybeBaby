@@ -1,0 +1,303 @@
+.decor {
+  position: absolute;
+  object-position: center;
+  object-fit: contain;
+  will-change: transform;
+  animation: parallax 10s infinite;
+  pointer-events: none;
+  &_1 {
+    @extend .decor;
+    width: size(49);
+    height: size(49);
+    left: size(30);
+    top: size(74);
+    @include media(md) {
+      left: size(105);
+      top: size(74);
+    }
+    @include media(lg) {
+      width: size(126);
+      height: size(126);
+      left: size(203);
+      top: size(161);
+    }
+  }
+  &_2 {
+    @extend .decor;
+    width: size(27);
+    height: size(27);
+    left: size(0);
+    top: size(129);
+    animation-delay: 2s;
+    @include media(md) {
+      left: size(75);
+      top: size(129);
+    }
+    @include media(lg) {
+      width: size(70);
+      height: size(70);
+      left: size(126);
+      top: size(303);
+    }
+  }
+  &_3 {
+    @extend .decor;
+    width: size(20);
+    height: size(20);
+    left: size(-8);
+    top: size(56);
+    animation-delay: 3s;
+    @include media(md) {
+      left: size(67);
+      top: size(56);
+    }
+    @include media(lg) {
+      width: size(50);
+      height: size(50);
+      left: size(105);
+      top: size(115);
+    }
+  }
+  &_4 {
+    @extend .decor;
+    width: size(50);
+    height: size(50);
+    right: size(31);
+    top: size(374);
+    @include media(md) {
+      right: size(106);
+      top: size(300);
+    }
+    @include media(lg) {
+      width: size(129);
+      height: size(129);
+      right: size(187);
+      top: size(628);
+    }
+  }
+  &_5 {
+    @extend .decor;
+    width: size(18);
+    height: size(18);
+    right: size(-8);
+    top: size(394);
+    animation-delay: 2s;
+    @include media(md) {
+      right: size(67);
+      top: size(320);
+    }
+    @include media(lg) {
+      width: size(48);
+      height: size(48);
+      right: size(83);
+      top: size(680);
+    }
+  }
+  &_6 {
+    @extend .decor;
+    width: size(12);
+    height: size(12);
+    right: size(17);
+    top: size(354);
+    animation-delay: 3s;
+    @include media(md) {
+      right: size(92);
+      top: size(280);
+    }
+    @include media(lg) {
+      width: size(30);
+      height: size(30);
+      right: size(152);
+      top: size(576);
+    }
+  }
+  &_7 {
+    @extend .decor;
+    @include media(lg) {
+      width: size(126);
+      height: size(126);
+      left: size(498);
+      top: size(1020);
+    }
+  }
+  &_8 {
+    @extend .decor;
+    animation-delay: 2s;
+    @include media(lg) {
+      width: size(70);
+      height: size(70);
+      left: size(430);
+      top: size(1145);
+    }
+  }
+  &_9 {
+    @extend .decor;
+    animation-delay: 3s;
+    @include media(lg) {
+      width: size(50);
+      height: size(50);
+      left: size(411);
+      top: size(979);
+    }
+  }
+  &_10 {
+    @extend .decor;
+    @include media(lg) {
+      width: size(129);
+      height: size(129);
+      right: size(350);
+      top: size(1440);
+    }
+  }
+  &_11 {
+    @extend .decor;
+    animation-delay: 2s;
+    @include media(lg) {
+      width: size(48);
+      height: size(48);
+      right: size(283);
+      top: size(1474);
+    }
+  }
+  &_12 {
+    @extend .decor;
+    animation-delay: 3s;
+    @include media(lg) {
+      width: size(30);
+      height: size(30);
+      right: size(327);
+      top: size(1407);
+    }
+  }
+  &_13 {
+    @extend .decor;
+    @include media(lg) {
+      width: size(109);
+      height: size(88);
+      left: size(161);
+      top: size(576);
+    }
+  }
+  &_14 {
+    @extend .decor;
+    animation-delay: 2s;
+    @include media(lg) {
+      width: size(41);
+      height: size(39);
+      left: size(276);
+      top: size(540);
+    }
+  }
+  &_15 {
+    @extend .decor;
+    animation-delay: 3s;
+    @include media(lg) {
+      width: size(26);
+      height: size(25);
+      left: size(290);
+      top: size(644);
+    }
+  }
+  &_16 {
+    @extend .decor;
+    @include media(lg) {
+      width: size(126);
+      height: size(126);
+      right: size(103);
+      top: size(696);
+    }
+  }
+  &_17 {
+    @extend .decor;
+    animation-delay: 2s;
+    @include media(lg) {
+      width: size(70);
+      height: size(70);
+      right: size(236);
+      top: size(838);
+    }
+  }
+  &_18 {
+    @extend .decor;
+    animation-delay: 3s;
+    @include media(lg) {
+      width: size(50);
+      height: size(50);
+      right: size(277);
+      top: size(650);
+    }
+  }
+  &_19 {
+    @extend .decor;
+    @include media(lg) {
+      width: size(129);
+      height: size(129);
+      left: size(58);
+      top: size(857);
+    }
+  }
+  &_20 {
+    @extend .decor;
+    animation-delay: 2s;
+    @include media(lg) {
+      width: size(48);
+      height: size(48);
+      left: size(244);
+      top: size(911);
+    }
+  }
+  &_21 {
+    @extend .decor;
+    animation-delay: 3s;
+    @include media(lg) {
+      width: size(30);
+      height: size(30);
+      left: size(193);
+      top: size(805);
+    }
+  }
+}
+.spot {
+  width: size(1723);
+  height: size(1723);
+  position: absolute;
+  z-index: -10;
+  &_1 {
+    @extend .spot;
+    left: size(-707);
+    top: size(-659);
+  }
+  &_2 {
+    @extend .spot;
+    right: size(-747);
+    top: size(-350);
+  }
+  &_3 {
+    @extend .spot;
+    left: size(-568);
+    bottom: size(-470);
+  }
+  &_4 {
+    @extend .spot;
+    right: size(-460);
+    top: size(-539);
+  }
+  &_5 {
+    @extend .spot;
+    left: size(-406);
+    bottom: size(-625);
+  }
+  &_6 {
+    @extend .spot;
+    left: size(-503);
+    top: size(-177);
+  }
+  &_7 {
+    @extend .spot;
+    width: size(1551);
+    height: size(1551);
+    left: 50%;
+    margin-left: size(-776);
+    top: size(-444);
+  }
+}

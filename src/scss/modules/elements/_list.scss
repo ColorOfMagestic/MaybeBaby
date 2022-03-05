@@ -1,0 +1,20 @@
+.list {
+  padding-left: size(35);
+  font-size: size(18);
+  font-weight: 500;
+  @include media(lg) {
+    font-size: size(24);
+  }
+  li {
+    &:not(:last-child) {
+      margin-bottom: size(20);
+    }
+  }
+  &--icon {
+    float: left;
+    margin-left: size(-35);
+    @include media(lg) {
+      margin-top: size(5);
+    }
+  }
+}

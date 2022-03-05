@@ -1,0 +1,120 @@
+.goods {
+  &--photo {
+    --adaptive-box: #{height(270,270)};
+    margin-bottom: size(5);
+    border-radius: size(5);
+    @include media(lg) {
+      margin-bottom: size(10);
+    }
+  }
+  &--status {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: size(5);
+    font-size: size(8);
+    font-weight: 500;
+    background: $btn-bg;
+    border-radius: size(5) size(5) 0 0;
+    z-index: 2;
+    @include media(lg) {
+      font-size: size(10);
+    }
+  }
+  &--title {
+    margin-bottom: size(5);
+    font-size: size(12);
+    font-weight: 500;
+    @include media(lg) {
+      margin-bottom: size(10);
+      font-size: size(16);
+    }
+  }
+  &--description {
+    display: none;
+    @include media(lg) {
+      display: block;
+      margin-bottom: size(10);
+      font-size: size(14);
+    }
+  }
+  &--detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &:not(:last-child) {
+      @include media(lg) {
+        margin-bottom: size(10);
+      }
+    }
+    &-underline {
+      display: none;
+      @include media(lg) {
+        display: block;
+        align-self: flex-end;
+        flex: 1 0 auto;
+        margin-bottom: 4px;
+        border-bottom: #d6b89c 1px dashed;
+      }
+    }
+    &-hint {
+      display: none;
+      @include media(lg) {
+        display: block;
+      }
+    }
+    &-wrapper {
+      margin-bottom: size(5);
+      font-size: size(10);
+      @include media(lg) {
+        margin-bottom: size(10);
+        font-size: size(14);
+      }
+    }
+  }
+  &--price {
+    display: flex;
+    align-items: center;
+    font-size: size(14);
+    font-weight: 500;
+    @include media(lg) {
+      justify-content: space-between;
+      padding: size(15) 0;
+      font-size: size(24);
+      border-top: #edeae9 1px solid;
+      border-bottom: #edeae9 1px solid;
+    }
+    &_old {
+      position: relative;
+      margin-left: size(6);
+      font-weight: 400;
+      color: #d0ccc9;
+      &:after {
+        content: '';
+        width: 110%;
+        height: 1px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        background: #d0ccc9;
+        transform: translate(-50%, -50%) rotate(-10deg);
+      }
+    }
+  }
+  &--more {
+    display: block;
+    font-size: size(10);
+    text-align: center;
+    text-decoration: underline;
+    color: inherit;
+    @include media(lg) {
+      font-size: size(14);
+    }
+  }
+  .btn {
+    margin: size(9) auto;
+    @include media(lg) {
+      margin: size(17) auto;
+    }
+  }
+}

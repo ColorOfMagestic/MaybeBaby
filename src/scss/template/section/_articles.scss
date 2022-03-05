@@ -1,0 +1,31 @@
+.articles {
+  position: relative;
+  padding-top: size(34);
+  @include media(lg) {
+    padding-top: size(97);
+  }
+  &--grid {
+    display: grid;
+    grid-template-areas: "title" "slider" "buttons";
+    @include media(lg) {
+      grid-template-columns: 1fr auto;
+      grid-template-areas: "title buttons" "slider slider";
+    }
+  }
+  &--slider {
+    grid-area: slider;
+    &-buttons {
+      grid-area: buttons;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .title--size-md {
+    grid-area: title;
+    margin: size(13);
+    @include media(lg) {
+      margin: 0;
+    }
+  }
+}

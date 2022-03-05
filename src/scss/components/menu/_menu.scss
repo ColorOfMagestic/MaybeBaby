@@ -1,0 +1,75 @@
+.menu {
+  display: none;
+  @include media(lg) {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    font-size: size(14);
+  }
+  a {
+    color: inherit;
+  }
+  &--group {
+    display: grid;
+    grid-row-gap: size(10);
+    margin-right: size(20);
+    position: relative;
+    &-title {
+      display: flex;
+      align-items: center;
+      &-icon {
+        width: size(15);
+        height: size(15);
+        margin-left: size(5);
+        object-position: center;
+        object-fit: contain;
+        fill: #332532;
+        transition: .4s;
+      }
+      &.open > .menu--group-title-icon {
+        transform: rotate(-180deg);
+      }
+    }
+    &-body {
+      display: none;
+    }
+    .menu--group {
+      margin: 0;
+      .open {
+        font-weight: 500;
+      }
+      .menu--group {
+        font-size: size(12);
+        .menu--group-body {
+          margin-left: size(16);
+        }
+      }
+    }
+  }
+  &--list {
+    display: grid;
+    grid-row-gap: size(10);
+    margin-bottom: size(10);
+    .menu--list {
+      margin-bottom: 0;
+    }
+  }
+  &--drop {
+    display: none;
+    min-width: size(230);
+    position: absolute;
+    left: size(-15);
+    top: size(18);
+    padding: size(10) size(15);
+    background: #fff;
+    box-shadow: 0 size(4) size(4) rgba(51, 37, 50, .05);
+  }
+  &--icon {
+    width: size(20);
+    height: size(20);
+    fill: #332532;
+  }
+  &--lnk {
+    margin-right: size(20);
+  }
+}

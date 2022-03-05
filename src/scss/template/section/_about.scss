@@ -1,0 +1,6 @@
+.about {
+  padding: size(34) 0 size(26);
+  @include media(lg) {
+    padding: size(97) 0 size(35);
+  }
+}
