@@ -1,3 +1,44 @@
-.breadcrumbs { 
-     
+.breadcrumbs-wrapper {
+  position: relative;
+  padding: size(73) 0 size(24);
+  @include media(lg) {
+    padding: size(107) 0 size(51);
+  }
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  .icon {
+    margin-right: size(6);
+    font-size: size(8);
+    background: none;
+  }
+  &-link {
+    font-weight: 600;
+  }
+  .hidden {
+    display: none;
+  }
+}
+@include media(lg) {
+  .breadcrumbs-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    .icon {
+      margin: size(4) size(6) 0;
+      font-size: size(8);
+      background: none;
+      transform: rotate(180deg);
+    }
+
+    &-link {
+      font-weight: 600;
+    }
+    .normal {
+      font-weight: 400;
+    }
+    .hidden {
+      display: block;
+    }
+  }
 }
