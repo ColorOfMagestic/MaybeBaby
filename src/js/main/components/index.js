@@ -8,3 +8,5 @@
 @@include("slider/index.js",{})
 
 @@include("top-btn.js",{})
+
+@@include("breadcrumbs/index.js",{})
