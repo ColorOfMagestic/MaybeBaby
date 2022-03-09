@@ -1,0 +1,56 @@
+.delivery-intro {
+  .text_ps {
+    margin-bottom: size(30);
+    @include media(lg) {
+      margin-bottom: size(50);
+    }
+  }
+  .text_ps:last-of-type {
+    margin-bottom: size(20);
+    @include media(lg) {
+      margin-bottom: size(30);
+    }
+  }
+
+  .delivery-intro-cards {
+    .delivery-intro-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      width: 100%;
+      min-height: 178px;
+      border: 1px solid #332532;
+      @include media(lg) {
+        justify-content: center;
+        min-height: 191px;
+      }
+      .icon {
+        margin-top: size(20);
+        font-size: size(50);
+        background: none;
+        @include media(lg) {
+          margin-top: size(0);
+        }
+      }
+      .delivery-intro-card-title {
+        margin-top: size(10);
+      }
+
+      .delivery-intro-card-text {
+        font-size: size(14);
+        text-align: center;
+        @include media(lg) {
+          padding: 0 size(41);
+          font-size: size(18);
+        }
+      }
+      .delivery-intro-card-text:first-of-type {
+        margin-top: size(5);
+        @include media(lg) {
+          margin-top: size(10);
+        }
+      }
+    }
+  }
+}
