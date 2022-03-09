@@ -1,4 +1,4 @@
-.breadcrumbs-wrapper {
+.breadcrumbs {
   position: relative;
   padding: size(73) 0 size(24);
   @include media(lg) {
@@ -13,6 +13,7 @@
     background: none;
   }
   &-link {
+    color: inherit;
     font-weight: 600;
   }
   .hidden {
@@ -20,7 +21,7 @@
   }
 }
 @include media(lg) {
-  .breadcrumbs-wrapper {
+  .breadcrumbs {
     display: flex;
     align-items: center;
     justify-content: flex-start;
