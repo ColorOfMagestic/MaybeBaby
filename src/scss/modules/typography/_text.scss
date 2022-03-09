@@ -2,6 +2,13 @@
   &:not(:last-child) {
     margin-bottom: 1.23em;
   }
+  &_md {
+    font-size: size(16);
+    line-height: 144%;
+    @include media(lg) {
+      font-size: size(24);
+    }
+  }
   &_big {
     font-size: size(16);
     font-weight: 500;
@@ -11,7 +18,6 @@
   }
   &_ps {
     font-size: size(14);
-    font-style: italic;
     @include media(lg) {
       font-size: size(24);
     }
