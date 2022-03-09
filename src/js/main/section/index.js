@@ -1,3 +1,6 @@
 @@include("header.js",{})
 @@include("home.js",{})
 @@include("footer.js",{})
+@@include("delivery-process.js",{}) 
+@@include("payment.js",{}) 
+@@include("contact.js",{}) 
