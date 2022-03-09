@@ -1,5 +1,9 @@
 .main {
   overflow: hidden;
   position: relative;
+  padding-top: size(73);
   z-index: 1;
+  @include media(lg) {
+    padding-top: size(107);
+  }
 }

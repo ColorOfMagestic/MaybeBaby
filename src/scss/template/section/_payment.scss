@@ -1,0 +1,53 @@
+.payment {
+  margin: size(36) 0 size(25);
+  @include media(lg) {
+    margin: size(59) 0 size(80);
+  }
+  .payment-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: size(10) 0;
+    @include media(md) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+      gap: 0 size(15);
+    }
+    @include media(lg) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+      gap: 0 size(30);
+    }
+    .payment-card {
+      width: 100%;
+      min-height: 191px;
+      padding: size(11);
+      border: 1px solid #332532;
+      @include media(lg) {
+        min-height: 200px;
+        padding: size(20);
+      }
+      @include media(hd) {
+        min-height: 299px;
+        padding: size(20);
+      }
+      .icon {
+        margin-top: size(4);
+        @include media(lg) {
+          margin-top: size(28);
+        }
+        font-size: size(50);
+        background: none;
+      }
+      .payment-card-title {
+        margin-top: size(5);
+      }
+      .payment-card-text {
+        margin-top: size(6);
+        @include media(lg) {
+          margin-top: size(10);
+        }
+      }
+    }
+  }
+}

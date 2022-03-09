@@ -1,0 +1,6 @@
+.inner-page {
+  padding-bottom: size(15);
+  @include media(lg) {
+    padding: size(30) 0 size(50);
+  }
+}

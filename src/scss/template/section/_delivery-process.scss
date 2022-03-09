@@ -5,6 +5,11 @@
   }
   .delivery-process__blocks {
     display: grid;
+    @include media(md) {
+      gap: 0 30px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+    }
     @include media(lg) {
       gap: 0 30px;
       grid-template-columns: repeat(4, 1fr);

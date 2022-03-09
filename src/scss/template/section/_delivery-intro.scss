@@ -21,6 +21,9 @@
       width: 100%;
       min-height: 178px;
       border: 1px solid #332532;
+      @include media(md) {
+        padding: size(10) 0;
+      }
       @include media(lg) {
         justify-content: center;
         min-height: 191px;
@@ -29,6 +32,9 @@
         margin-top: size(20);
         font-size: size(50);
         background: none;
+        @include media(md) {
+          margin-top: size(10);
+        }
         @include media(lg) {
           margin-top: size(0);
         }
