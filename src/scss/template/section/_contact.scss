@@ -1,5 +1,5 @@
 .contact {
-  .contact-wrapper {
+  &-wrapper {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -34,11 +34,11 @@
         font-size: size(50);
         background: none;
       }
-      .contact-item_name {
+      &_name {
         margin-top: size(10);
         font-weight: 500;
       }
-      .contact-item_info {
+      &_info {
         margin-top: size(5);
         font-size: size(14);
         text-align: center;
@@ -58,16 +58,22 @@
     }
   }
   .map {
+    position: relative;
+    width: 100%;
+    min-height: 288px;
     margin-top: size(20);
+    @include media(md) {
+      width: 86%;
+      min-height: 320px;
+      margin: 0 auto;
+      margin-top: size(30);
+    }
     @include media(lg) {
       width: 61%;
       min-height: 530px;
       margin: 0 auto;
       margin-top: size(30);
     }
-    width: 100%;
-    position: relative;
-    min-height: 288px;
     .frame {
       position: absolute;
       width: 100%;
