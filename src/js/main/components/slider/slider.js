@@ -1,27 +1,18 @@
-const reviews = new Swiper('.reviews--slider', {
-    spaceBetween: 30,
-    navigation: {
-        nextEl: '.reviews--slider-next',
-        prevEl: '.reviews--slider-prev',
+const reviews = new Swiper('[data-role="company-slider"]', {
+  slidesPerView: 2,
+  centeredSlides: true,
+  initialSlide: 1,
+
+  navigation: {
+    nextEl: '[data-role="company-next"]',
+    prevEl: '[data-role="company-prev"]',
+  },
+  breakpoints: {
+    320: {
+      spaceBetween: 9,
     },
-    breakpoints: {
-        768: {
-            slidesPerView: 2,
-        }
-    }
-})
-const articles = new Swiper('.articles--slider', {
-    spaceBetween: 30,
-    navigation: {
-        nextEl: '.articles--slider-next',
-        prevEl: '.articles--slider-prev',
+    1024: {
+      spaceBetween: 30,
     },
-    breakpoints: {
-        768: {
-            slidesPerView: 2,
-        },
-        1024: {
-            slidesPerView: 3,
-        },
-    }
-})
+  },
+});
