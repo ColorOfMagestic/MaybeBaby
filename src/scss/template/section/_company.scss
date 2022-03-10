@@ -1,0 +1,18 @@
+.company {
+  .slider--buttons {
+    display: none;
+    @include media(lg) {
+      display: flex;
+    }
+  }
+  .swiper {
+    .swiper-wrapper {
+      .company-slide {
+        img {
+          width: 100%;
+          border-radius: size(5);
+        }
+      }
+    }
+  }
+}
