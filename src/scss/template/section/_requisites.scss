@@ -4,6 +4,10 @@
     margin-top: size(54);
   }
   .requisites__wrapper {
+    @include media(md) {
+      width: 86%;
+      margin: 0 auto;
+    }
     @include media(lg) {
       margin: 0 auto;
       width: 61%;
@@ -19,15 +23,11 @@
         font-weight: 500;
       }
       @include media(lg) {
-        padding: size(20) size(12);
-      }
-      @include media(lg) {
         grid-template-columns: 35% 65%;
         grid-template-rows: auto;
         align-items: center;
         height: 57px;
-      }
-      .requisit-name {
+        padding: size(20) size(12);
       }
       .requisit-info {
         margin-top: size(10);
