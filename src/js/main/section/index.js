@@ -4,3 +4,7 @@
 @@include("delivery-process.js",{}) 
 @@include("payment.js",{}) 
 @@include("contact.js",{}) 
+@@include("requisites.js",{}) 
+@@include("questions.js",{}) 
+@@include("company.js",{}) 
+@@include("story.js",{}) 

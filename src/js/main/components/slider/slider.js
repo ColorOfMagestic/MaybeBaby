@@ -1,5 +1,5 @@
 const reviews = new Swiper('[data-role="company-slider"]', {
-  slidesPerView: 2,
+  loop: true,
   centeredSlides: true,
   initialSlide: 1,
 
@@ -9,9 +9,11 @@ const reviews = new Swiper('[data-role="company-slider"]', {
   },
   breakpoints: {
     320: {
+      slidesPerView: 1.3,
       spaceBetween: 9,
     },
     1024: {
+      slidesPerView: 2.4,
       spaceBetween: 30,
     },
   },
