@@ -17,6 +17,8 @@
     }
   }
   &_ps {
+    letter-spacing: 0.1px;
+
     font-size: size(14);
     @include media(lg) {
       font-size: size(24);

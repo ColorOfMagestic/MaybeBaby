@@ -66,5 +66,12 @@
         font-size: size(64);
       }
     }
+    &-sy {
+      font-size: size(18);
+      font-weight: 600;
+      @include media(lg) {
+        font-size: size(30);
+      }
+    }
   }
 }
