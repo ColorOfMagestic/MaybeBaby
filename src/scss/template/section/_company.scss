@@ -6,10 +6,11 @@
     }
   }
   .swiper {
-    .swiper-wrapper {
+    &-wrapper {
       .company-slide {
         img {
           width: 100%;
+          min-height: 205px;
           border-radius: size(5);
         }
       }
