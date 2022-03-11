@@ -1,0 +1,120 @@
+.story {
+  margin-top: size(38);
+  @include media(lg) {
+    margin-top: size(64);
+  }
+  &-intro {
+    &__text {
+      &:not(:last-child) {
+        margin-bottom: size(25);
+        @include media(lg) {
+          margin-bottom: size(45);
+        }
+      }
+    }
+  }
+  &-questions {
+    margin-top: size(10);
+    @include media(lg) {
+      margin-top: size(30);
+    }
+    &__title {
+      margin-top: size(10);
+      @include media(lg) {
+        margin-top: size(30);
+      }
+    }
+    &__list {
+      margin-top: size(10);
+      @include media(lg) {
+        margin-top: size(30);
+      }
+
+      &-item {
+        position: relative;
+        padding-left: size(34);
+        &::after {
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: block;
+          width: 24px;
+          height: 22px;
+          content: "";
+          background: url(../../../images/story/ar_r.svg);
+          background-size: cover;
+        }
+        @include media(lg) {
+          padding-left: size(45);
+        }
+        @include media(hd) {
+          padding-left: size(34);
+        }
+      }
+    }
+  }
+  &-decision {
+    &__title {
+      margin-top: size(10);
+      @include media(lg) {
+        margin-top: size(30);
+      }
+    }
+    &__text {
+      margin-top: size(10);
+      @include media(lg) {
+        margin-top: size(30);
+      }
+    }
+    &__features {
+      margin: size(10) 0 size(54);
+      gap: 0;
+      @include media(lg) {
+        margin: size(70) 0 size(80);
+        gap: size(60) size(32);
+      }
+      &-item__wrapper {
+        display: grid;
+        @include media(md) {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .story-decision__features-item {
+          margin-top: size(10);
+          .icon {
+            font-size: size(45);
+            background: none;
+            @include media(lg) {
+              font-size: size(70);
+            }
+          }
+          .features-item__description {
+            margin-top: size(10);
+            @include media(lg) {
+              margin-top: size(20);
+            }
+            span {
+              display: block;
+            }
+          }
+          @include media(lg) {
+            &:nth-child(odd) {
+              margin-right: size(33);
+            }
+          }
+        }
+        .sale {
+          font-size: size(24);
+          font-weight: 600;
+          @include media(md) {
+            margin-top: size(10);
+          }
+          @include media(lg) {
+            grid-column: 1 / span 2;
+            margin-top: size(17);
+            font-size: size(48);
+          }
+        }
+      }
+    }
+  }
+}
