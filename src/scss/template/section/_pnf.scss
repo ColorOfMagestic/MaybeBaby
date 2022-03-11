@@ -1,0 +1,64 @@
+.pnf {
+  &__wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    margin-bottom: size(46);
+    @include media(lg) {
+      margin-bottom: size(90);
+    }
+    &-info {
+      &__title {
+        margin-top: size(13);
+        text-align: center;
+        span {
+          display: inline-flex;
+        }
+        @include media(lg) {
+          margin-top: size(134);
+          text-align: left;
+
+          span {
+            display: block;
+          }
+        }
+      }
+      &__btn {
+        margin-top: size(13);
+        @include media(md) {
+          width: 50%;
+          margin: size(20) auto 0;
+        }
+        @include media(lg) {
+          margin-top: size(20);
+          margin-left: 0;
+        }
+      }
+      &__list {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        margin-top: size(23);
+        @include media(lg) {
+          margin-top: size(43);
+          justify-content: flex-start;
+        }
+        &-item {
+          margin-right: size(15);
+          font-size: size(14);
+        }
+      }
+      @include media(lg) {
+        width: 48.72%;
+        margin-right: size(72);
+      }
+    }
+    @include media(lg) {
+      flex-flow: row nowrap;
+      &-pic {
+        order: 1;
+      }
+    }
+  }
+}
