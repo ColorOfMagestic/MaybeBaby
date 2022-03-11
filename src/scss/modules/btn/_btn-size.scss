@@ -1,34 +1,31 @@
 .btn--size {
-    &-md {
-        padding: size(11) size(15);
-        font-size: size(11);
-        line-height: 1.8;
-        text-align: center;
-        @include media(lg) {
-            padding: size(17) size(28);
-            font-size: size(16);
-            line-height: 1.88;
-        }
+  &-md {
+    padding: size(11) size(15);
+    font-size: size(11);
+    line-height: 1.8;
+    text-align: center;
+    @include media(lg) {
+      padding: size(17) size(28);
+      font-size: size(16);
+      line-height: 1.88;
     }
-    &-lg {
-        padding: size(25) size(17);
-        font-size: size(16);
-        line-height: 1.88;
-        text-align: center;
-        @include media(lg) {
-            padding: size(25) size(40);
-            font-size: size(18);
-            line-height: 1.67;
-        }
+  }
+  &-lg {
+    padding: size(25) size(17);
+    font-size: size(16);
+    line-height: 1.88;
+    text-align: center;
+    @include media(lg) {
+      padding: size(25) size(40);
+      font-size: size(18);
+      line-height: 1.67;
     }
-    &-cover {
-        width: 100%;
-        padding: size(30) size(28);
-        font-size: size(16);
-        line-height: 1.88;
-        text-align: center;
-        @include media(lg) {
-            width: auto;
-        }
-    }
+  }
+  &-cover {
+    width: 100%;
+    padding: size(30) size(28);
+    font-size: size(16);
+    line-height: 1.88;
+    text-align: center;
+  }
 }
